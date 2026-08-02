@@ -1,22 +1,22 @@
 // The three photo booth looks - see CONFIG.photoBoothMode below.
 export type CameraMode = "vintage" | "modern" | "polaroid";
 
-/* ============================================================
+/* ========================================================
    CONFIG - edit these values to make the badge your own!
    ============================================================ */
 export const CONFIG = {
   // 2–4 hex colors. The background will drift smoothly between them.
   // Visit https://coolors.co/palettes/trending for colors!
   // Colors must start with #
-  gradientColors: ["#002d73", "#742f8b", "#742f8b"],
+  gradientColors: ["#c30808", "#454aba", "#c30808"],
 
   // Your name (or nickname) as a plain string. Shows on the badge and sets
   // the initials in the avatar circle.
-  name: "Your Name",
+  name: "nora alotaibi",
 
   // One short sentence, shown under "Fun fact" on the badge. Keep it to
   // a single line - long text will wrap and may get cramped.
-  funFact: "I own 7 cats.",
+  funFact: "i love cats.",
 
   // true if you're running/deploying this from a cloud VM, false if it's
   // just running on your own laptop. Only changes the "My Laptop 💻" vs
@@ -39,13 +39,13 @@ export const CONFIG = {
   favorite: {
     // Which word appears in "My favorite ___ is..." on the badge. One of
     // these exact strings: "movie" | "game" | "tv show" | "anime"
-    category: "movie",
+    category: "series",
     // The title, shown as plain text under the poster.
-    title: "Interstellar",
+    title: "daredevil",
     // A direct image URL (or a local file like ./posters/mine.jpg) for the
     // poster/cover art. Go to Google -> search the title -> right-click
     // the poster -> "Copy Image Address" -> paste it in here.
     posterUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeX3l7pPix7HgNUcwpFG2Ws3omIqA9URTCWVh6ia-XD4_2yollk1RkIgP2XWYTycl6eSkC6pAnpOxrU2rMZoptSDnvPFcAzKDLsfSVLd0&s=10",
+      "/public/image.png",
   },
 };
