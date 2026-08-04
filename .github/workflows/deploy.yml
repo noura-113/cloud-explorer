@@ -31,7 +31,7 @@ jobs:
           context: .
           push: true
           platforms: linux/amd64
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/cloud-Badges:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/cloud-Badge:latest
 
   deploy:
     needs: build-and-push # <-- this job must wait for which job?
@@ -45,8 +45,8 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             set -e
-            docker rm -f cloud-Badges || true
+            docker rm -f cloud-Badge || true
             docker run -d --pull always -p 80:80 -p 443:443 \
               -e SITE_ADDRESS=${{ secrets.SITE_ADDRESS }} \
-              --name cloud-Badges ${{ secrets.DOCKERHUB_USERNAME }}/cloud-Badges:latest
+              --name cloud-Badge ${{ secrets.DOCKERHUB_USERNAME }}/cloud-Badge:latest
 
