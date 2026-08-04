@@ -12,7 +12,7 @@ export const CONFIG = {
 
   // Your name (or nickname) as a plain string. Shows on the badge and sets
   // the initials in the avatar circle.
-  name: "nora mutlaq",
+  name: "nora MUTLAQ",
 
   // One short sentence, shown under "Fun fact" on the badge. Keep it to
   // a single line - long text will wrap and may get cramped.
