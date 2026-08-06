@@ -46,6 +46,6 @@ export const CONFIG = {
     // poster/cover art. Go to Google -> search the title -> right-click
     // the poster -> "Copy Image Address" -> paste it in here.
     posterUrl:
-      "/public/image.png",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ37kth5NQ8oC5UAKb8kztUwXmrO0gfddMFLKpR1z3-gQ&s=10",
   },
 };
